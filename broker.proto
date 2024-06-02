@@ -1,0 +1,73 @@
+syntax = "proto3";
+
+service Broker{
+    rpc Crear_topic(crear_topic_req) returns (crear_topic_res) {}
+    rpc Recibir_topic(mensaje_req) returns (stream mensaje_res){}
+    rpc Publicar_mensaje(publicar_mensaje_req) returns (publicar_mensaje_res){}
+    rpc Suscribirse_topic(suscribirse_req) returns (suscribirse_res){}
+    rpc Listar_topics(listar_topics_req) returns (stream listar_topics_res){}
+
+    rpc Ping(ping) returns (ping){}
+}
+
+/* SOLICITUD PARA RECIBIR MENSAJES DE UN TOPICO */
+
+message mensaje_req{
+    string topicID = 1;
+}
+
+message mensaje_res{
+    string mensaje = 1;
+    string status = 2;
+}
+
+/* SOLICITUD PARA CREAR UN TEMA */
+
+message crear_topic_req{
+    string nombre = 1;
+}
+
+message crear_topic_res{
+    optional string nombre = 1;
+    optional string topicId = 2;
+    optional string razon = 3;
+    bool creado = 4;
+}
+
+/* SOLICITUD PARA PUBLICAR MENSAJES A UN TOPICO */
+
+message publicar_mensaje_req{
+    string mensaje = 1;
+    string topicId = 2;
+}
+
+message publicar_mensaje_res{
+    bool publicado = 1;
+}
+
+/* SUSCRIBIRSE A UN TOPIC */
+
+message suscribirse_req{
+    string topicId = 1;
+}
+
+message suscribirse_res{
+    string topicId = 1;
+    string nombreTopic = 2;
+    bool suscrito = 3;
+}
+
+/* SOLICITAR LISTA DE TOPICOS */
+message listar_topics_req{
+    
+}
+
+message listar_topics_res{
+    string topicId = 1;
+    string nombreTopic = 2;
+    optional int32 suscritos = 3;
+}
+
+message ping{
+    string msg = 1;
+}

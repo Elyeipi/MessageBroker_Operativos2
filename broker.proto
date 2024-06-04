@@ -43,6 +43,7 @@ message publicar_mensaje_req{
 
 message publicar_mensaje_res{
     bool publicado = 1;
+    optional string razon = 2;
 }
 
 /* SUSCRIBIRSE A UN TOPIC */
@@ -52,8 +53,8 @@ message suscribirse_req{
 }
 
 message suscribirse_res{
-    string topicId = 1;
-    string nombreTopic = 2;
+    optional string topicId = 1;
+    optional string nombreTopic = 2;
     bool suscrito = 3;
 }
 

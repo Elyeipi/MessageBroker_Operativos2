@@ -45,10 +45,12 @@ class publicar_mensaje_req(_message.Message):
     def __init__(self, mensaje: _Optional[str] = ..., topicId: _Optional[str] = ...) -> None: ...
 
 class publicar_mensaje_res(_message.Message):
-    __slots__ = ("publicado",)
+    __slots__ = ("publicado", "razon")
     PUBLICADO_FIELD_NUMBER: _ClassVar[int]
+    RAZON_FIELD_NUMBER: _ClassVar[int]
     publicado: bool
-    def __init__(self, publicado: bool = ...) -> None: ...
+    razon: str
+    def __init__(self, publicado: bool = ..., razon: _Optional[str] = ...) -> None: ...
 
 class suscribirse_req(_message.Message):
     __slots__ = ("topicId",)

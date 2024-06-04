@@ -11,7 +11,8 @@ def run():
     with grpc.insecure_channel("localhost:50100") as channel:
         stub = broker_pb2_grpc.BrokerStub(channel)
         
-        Menu(stub)
+        menu = Menu(stub)
+        menu.start()
             
             
 

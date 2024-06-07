@@ -3,8 +3,12 @@ import os
 import grpc
 import broker_pb2
 import broker_pb2_grpc
+import threading as th
 
 from logic.Topic import *
+
+BUFFER_MAX = 50
+BUFFER_VACIO = 0
 
 # ========================= MENUS ============================
 class Menu():
@@ -13,6 +17,9 @@ class Menu():
         self.topicsCreados = ListaTopics()
         self.topicsSuscritos = ListaTopics()
         self.stub = stub
+
+        self.semaforo_lleno = th.Semaphore(BUFFER_MAX)
+        self.semaforo_vacio = th.Semaphore(BUFFER_VACIO)
 
     def start(self):
         self.stub.Ping(broker_pb2.ping(msg="Ping from client"))
@@ -26,8 +33,7 @@ class Menu():
                 self.menuPublisher()
             if opt == 2:
                 os.system("cls")
-                print("Menu de suscriptor aquí...")
-                os.system("sleep 2")
+                self.menuSuscriptor()
             elif opt == 0:
                 os.system("cls")
                 break
@@ -68,9 +74,9 @@ class Menu():
                 print(self.topicsCreados.toString())
                 print("\n")
 
-                topicNombre = input("Introducir nombre del tema\n\n   > ")
+                topicNombre = input("Introducir ID del tema\n\n   > ")
 
-                topicAux = self.topicsCreados.buscarTopic(topicNombre)
+                topicAux = self.topicsCreados.buscarTopicId(topicNombre)
                 topicMensaje = input("\nMensaje: ")
                 
                 response = self.stub.Publicar_mensaje(broker_pb2.publicar_mensaje_req(mensaje=topicMensaje, topicId=topicAux.getTopicId()))
@@ -93,11 +99,65 @@ class Menu():
                 break
             else:
                 print("[AVISO] Opción no valida, elegir las mostradas en la lista")
-                os.system("sleep 2")
+                os.system("pause")
         
 
-    # ========== MOSTRAR GENERAL ==========
+    def menuSuscriptor(self):
+        while True:
+            os.system("cls")
+            opt = int(self.inputSuscriptorMenu())
+            if opt == 1:
+                for topics in self.stub.Listar_topics(broker_pb2.listar_topics_req()):
+                    print(f"|   ID: {topics.topicId}    Nombre: {topics.nombreTopic}")
 
+                topicId = input("\n   ID del tema a suscribirse:\n        > ")
+            
+                res = self.stub.Suscribirse_topic(broker_pb2.suscribirse_req(topicId=topicId))
+
+                if res.suscrito == False:
+                    print("\n[X] El tema no existe, selecciona otro tema\n")
+                else:
+                    self.topicsSuscritos.insertarTopic(Topic(res.topicId, res.nombreTopic))
+                    print(f"\n[Y] Suscrito al tema {res.nombreTopic} exitosamente\n")
+
+                os.system("pause")
+                
+            elif opt == 2:
+                #first_time = True
+                #while 1:
+
+                    #if first_time == False:
+                    #    self.semaforo_vacio.acquire()
+                             
+                    #res = self.stub.Recibir_topic(broker_pb2.mensaje_req(topicID="1"))
+                    #semV = res.pop()
+                    #semL = res.pop()
+
+                for mensaje_r in self.stub.Recibir_topic(broker_pb2.mensaje_req(topicID="1")):
+                    print(f"{mensaje_r.mensaje}")
+                    
+                    #self.semaforo_lleno.release()
+
+
+                os.system("pause")
+
+                    #first_time = False
+
+
+            elif opt == 3:
+                os.system("clear")
+
+                print("________________ LISTA DE TEMAS SUSCRITOS __________________")
+                for t in self.topicsSuscritos.topics:
+                    print(f"|   ID: {t.getTopicId()}    Nombre: {t.getNombre()}")
+
+                os.system("pause")
+            elif opt == 0:
+                os.system("cls")
+                break
+
+
+    # ========== MOSTRAR GENERAL ==========
     def showOptionsGeneral(self):
         listaMenu = """============ MESSAGE BROKER - Pub/Sub ============
 
@@ -138,6 +198,20 @@ class Menu():
     def crearTema(self):
         return input(self.showCrearTema())
     
+    def showSuscriptorMenu(self):
+        listaMenu = """============ SUSCRIPTOR - Menu ============
+            [1] Suscribirse a un tema
+            [2] Ver mensajes de temas suscritos
+            [3] Listar temas suscritos
+            [0] Volver
+            
+                > """
+
+        return listaMenu
+    
+    def inputSuscriptorMenu(self):
+        return input(self.showSuscriptorMenu())
+        
     # def imprimirTopicsCreados(self):
     #     print(f"\n\n________Lista de topics creados________\n")
     #     for t in self.topicsCreados:

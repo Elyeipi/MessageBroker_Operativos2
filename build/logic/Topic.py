@@ -1,16 +1,19 @@
+import threading as th
+
 class Topic():
 
     def __init__(self, topicId: str = "", nombre: str = ""):
         self.__topicId = topicId
         self.__nombre = nombre
         self.__buffer = []
+        self.__mutex_publicar = th.Lock()
     
     # Getters
     def getTopicId(self) -> str:
         return self.__topicId
     def getNombre(self) -> str:
         return self.__nombre
-    def getBuffer(self) -> list:
+    def getBuffer(self) -> list[str]:
         return self.__buffer
     
     # Setters
@@ -20,7 +23,12 @@ class Topic():
         self.__nombre = nombre
 
     def publicarMsg(self, mensaje: str):
+        self.__mutex_publicar.acquire();
+
         self.__buffer.append(mensaje)
+        
+        self.__mutex_publicar.release();
+    
     
     def leerMsg(self):
         return self.__buffer.pop()
@@ -38,6 +46,13 @@ class ListaTopics():
     def buscarTopic(self, topicNombre : str) -> Topic:
         for t in self.topics:
             if t.getNombre() == topicNombre:
+                return t
+    
+        return None
+    
+    def buscarTopicId(self, topicId : str) -> Topic:
+        for t in self.topics:
+            if t.getTopicId() == topicId:
                 return t
     
         return None

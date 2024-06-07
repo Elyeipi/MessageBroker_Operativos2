@@ -18,7 +18,7 @@ message mensaje_req{
 
 message mensaje_res{
     string mensaje = 1;
-    string status = 2;
+    optional string valorSem = 2;
 }
 
 /* SOLICITUD PARA CREAR UN TEMA */
@@ -60,7 +60,7 @@ message suscribirse_res{
 
 /* SOLICITAR LISTA DE TOPICOS */
 message listar_topics_req{
-    
+     
 }
 
 message listar_topics_res{

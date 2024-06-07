@@ -4,13 +4,15 @@ import logging
 
 import grpc
 import broker_pb2_grpc
+import broker_pb2
+import os
 from Menu import Menu
 
 
 def run():
     with grpc.insecure_channel("localhost:50100") as channel:
         stub = broker_pb2_grpc.BrokerStub(channel)
-        
+
         menu = Menu(stub)
         menu.start()
             

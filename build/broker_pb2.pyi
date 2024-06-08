@@ -11,12 +11,14 @@ class mensaje_req(_message.Message):
     def __init__(self, topicID: _Optional[str] = ...) -> None: ...
 
 class mensaje_res(_message.Message):
-    __slots__ = ("mensaje", "valorSem")
+    __slots__ = ("mensaje", "nombre", "status")
     MENSAJE_FIELD_NUMBER: _ClassVar[int]
-    VALORSEM_FIELD_NUMBER: _ClassVar[int]
+    NOMBRE_FIELD_NUMBER: _ClassVar[int]
+    STATUS_FIELD_NUMBER: _ClassVar[int]
     mensaje: str
-    valorSem: str
-    def __init__(self, mensaje: _Optional[str] = ..., valorSem: _Optional[str] = ...) -> None: ...
+    nombre: str
+    status: bool
+    def __init__(self, mensaje: _Optional[str] = ..., nombre: _Optional[str] = ..., status: bool = ...) -> None: ...
 
 class crear_topic_req(_message.Message):
     __slots__ = ("nombre",)

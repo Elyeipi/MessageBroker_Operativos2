@@ -2,7 +2,7 @@ syntax = "proto3";
 
 service Broker{
     rpc Crear_topic(crear_topic_req) returns (crear_topic_res) {}
-    rpc Recibir_topic(mensaje_req) returns (stream mensaje_res){}
+    rpc Recibir_topic(mensaje_req) returns (mensaje_res){}
     rpc Publicar_mensaje(publicar_mensaje_req) returns (publicar_mensaje_res){}
     rpc Suscribirse_topic(suscribirse_req) returns (suscribirse_res){}
     rpc Listar_topics(listar_topics_req) returns (stream listar_topics_res){}
@@ -17,8 +17,9 @@ message mensaje_req{
 }
 
 message mensaje_res{
-    string mensaje = 1;
-    optional string valorSem = 2;
+    optional string mensaje = 1;
+    optional string nombre = 2;
+    bool status = 3;
 }
 
 /* SOLICITUD PARA CREAR UN TEMA */

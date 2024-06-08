@@ -44,7 +44,7 @@ class BrokerStub(object):
                 request_serializer=broker__pb2.crear_topic_req.SerializeToString,
                 response_deserializer=broker__pb2.crear_topic_res.FromString,
                 _registered_method=True)
-        self.Recibir_topic = channel.unary_stream(
+        self.Recibir_topic = channel.unary_unary(
                 '/Broker/Recibir_topic',
                 request_serializer=broker__pb2.mensaje_req.SerializeToString,
                 response_deserializer=broker__pb2.mensaje_res.FromString,
@@ -118,7 +118,7 @@ def add_BrokerServicer_to_server(servicer, server):
                     request_deserializer=broker__pb2.crear_topic_req.FromString,
                     response_serializer=broker__pb2.crear_topic_res.SerializeToString,
             ),
-            'Recibir_topic': grpc.unary_stream_rpc_method_handler(
+            'Recibir_topic': grpc.unary_unary_rpc_method_handler(
                     servicer.Recibir_topic,
                     request_deserializer=broker__pb2.mensaje_req.FromString,
                     response_serializer=broker__pb2.mensaje_res.SerializeToString,
@@ -192,7 +192,7 @@ class Broker(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_stream(
+        return grpc.experimental.unary_unary(
             request,
             target,
             '/Broker/Recibir_topic',

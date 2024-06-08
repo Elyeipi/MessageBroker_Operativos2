@@ -13,12 +13,13 @@ import broker_pb2_grpc
 from logic.Topic import Topic
 from logic.Topic import ListaTopics
 
-BUFFER_MAX = 50
+BUFFER_MAX = 5
 BUFFER_VACIO = 0
 
 #Mutexes y semaforos disponibles
 mutex_bitacora = th.Lock()
 mutex_crear_tema = th.Lock()
+mutex_first_time = th.Lock()
 semaforo_lleno = th.Semaphore(BUFFER_MAX)
 semaforo_vacio = th.Semaphore(BUFFER_VACIO)
 
@@ -57,7 +58,14 @@ class Broker(broker_pb2_grpc.BrokerServicer):
         topicAux = None
         for t in listaTopics.topics:
             if t.getTopicId() == request.topicId:
+
+                semaforo_lleno.acquire(timeout=0.5)
                 t.publicarMsg(request.mensaje)
+                semaforo_vacio.release()
+
+                print(f"VALOR DEL SEMAFORO LLENO {semaforo_lleno._value}")
+                print(f"VALOR DEL SEMAFORO VACIO {semaforo_vacio._value}")
+
                 print(f"Mensaje publicado en topic ({t.getTopicId()}): {request.mensaje}")
                 Broker.registrarBitacora(f"Cliente {context.peer()} publico mensaje en {t.getNombre()}: {request.mensaje}")
                 return broker_pb2.publicar_mensaje_res(publicado=True)
@@ -74,22 +82,20 @@ class Broker(broker_pb2_grpc.BrokerServicer):
     
     def Recibir_topic(self, request, context):
         topicAux = listaTopics.buscarTopicId(request.topicID)
-        listaTops = []
+        
 
         # CONDICION SEMAFORO
 
         if topicAux != None:
-            #semaforo_lleno.acquire()
+            if len(topicAux.getBuffer()) >= 1:
 
-            for msg in topicAux.getBuffer():
-                yield broker_pb2.mensaje_res(mensaje=msg)
+                semaforo_vacio.acquire()
+                msj = topicAux.leerMsg()
+                semaforo_lleno.release()
 
-            #semaforo_vacio.release()
-
-        #listaTops.append(broker_pb2.mensaje_res(mensaje="semL", valorSem=semaforo_lleno._value))
-        #listaTops.append(broker_pb2.mensaje_res(mensaje="semV", valorSem=semaforo_vacio._value))
-
-        #yield listaTops
+                return broker_pb2.mensaje_res(mensaje=msj, nombre=topicAux.getNombre(), status=True)
+            
+            return broker_pb2.mensaje_res(status=False)
             
         
 

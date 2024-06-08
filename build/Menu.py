@@ -5,10 +5,14 @@ import broker_pb2
 import broker_pb2_grpc
 import threading as th
 
+import keyboard
+
 from logic.Topic import *
 
 BUFFER_MAX = 50
 BUFFER_VACIO = 0
+
+
 
 # ========================= MENUS ============================
 class Menu():
@@ -21,7 +25,11 @@ class Menu():
         self.semaforo_lleno = th.Semaphore(BUFFER_MAX)
         self.semaforo_vacio = th.Semaphore(BUFFER_VACIO)
 
+        self.listenersTopics : list[th.Thread] = []
+
     def start(self):
+        global kill_thread
+
         self.stub.Ping(broker_pb2.ping(msg="Ping from client"))
 
         while True:
@@ -61,25 +69,21 @@ class Menu():
                 else:
                     print("\n   [Y][SERVER] Temas creado correctamente")
                     print(f"\n   Nombre: {response.nombre}  ID: {response.topicId}")
-                    self.topicsCreados.insertarTopic(Topic(response.topicId, response.nombre))
-                    print("____________________Topics Creados____________________\n")
-                    print(self.topicsCreados.toString())
                     
 
                 os.system("pause")
 
             elif opt == 2:
                 os.system("cls")
-                print("_____________________ ELEGIR TOPICS CREADOS _____________________")
-                print(self.topicsCreados.toString())
+                print("_____________________ ELEGIR TOPICS _____________________")
+                for t in self.stub.Listar_topics(broker_pb2.listar_topics_req()):
+                    print(f"Nombre: {t.nombreTopic}  ID: {t.topicId}")
                 print("\n")
 
-                topicNombre = input("Introducir ID del tema\n\n   > ")
-
-                topicAux = self.topicsCreados.buscarTopicId(topicNombre)
+                topicId = input("Introducir ID del tema\n\n   > ")
                 topicMensaje = input("\nMensaje: ")
                 
-                response = self.stub.Publicar_mensaje(broker_pb2.publicar_mensaje_req(mensaje=topicMensaje, topicId=topicAux.getTopicId()))
+                response = self.stub.Publicar_mensaje(broker_pb2.publicar_mensaje_req(mensaje=topicMensaje, topicId=topicId))
 
                 if response.publicado == False:
                     print(f"[X][SERVIDOR] {response.razon}")
@@ -123,25 +127,13 @@ class Menu():
                 os.system("pause")
                 
             elif opt == 2:
-                #first_time = True
-                #while 1:
+                self.iniciarListeners()
 
-                    #if first_time == False:
-                    #    self.semaforo_vacio.acquire()
-                             
-                    #res = self.stub.Recibir_topic(broker_pb2.mensaje_req(topicID="1"))
-                    #semV = res.pop()
-                    #semL = res.pop()
-
-                for mensaje_r in self.stub.Recibir_topic(broker_pb2.mensaje_req(topicID="1")):
-                    print(f"{mensaje_r.mensaje}")
-                    
-                    #self.semaforo_lleno.release()
-
-
-                os.system("pause")
-
-                    #first_time = False
+                print("================= ESCUCHANDO MENSAJES =================")
+                print("[NOTA] Apretar tecla 'esc' para salir del modo escucha\n")
+                while True:
+                    if keyboard.is_pressed('esc'):
+                        break;
 
 
             elif opt == 3:
@@ -155,6 +147,19 @@ class Menu():
             elif opt == 0:
                 os.system("cls")
                 break
+
+    
+    def iniciarListeners(self):
+        idWorker : int = 0;
+
+        for t in self.topicsSuscritos.topics:
+            idWorker += 1
+            threadAux = th.Thread(target=worker, name=f"listener ({idWorker})", args=(self.stub, t.getTopicId(),))
+            self.listenersTopics.append(threadAux)
+            threadAux.start()
+            
+            
+
 
 
     # ========== MOSTRAR GENERAL ==========
@@ -212,15 +217,14 @@ class Menu():
     def inputSuscriptorMenu(self):
         return input(self.showSuscriptorMenu())
         
-    # def imprimirTopicsCreados(self):
-    #     print(f"\n\n________Lista de topics creados________\n")
-    #     for t in self.topicsCreados:
-    #         print(f"ID: {t.getTopicId()}  Nombre: {t.getNombre()}")
-    #     print("\n")
-        
 
-    # def imprimirTopicsSuscritos(self):
-    #     print(f"\n\n________Lista de topics suscritos________\n")
-    #     for t in self.topicsSuscritos:
-    #         print(f"ID: {t.getTopicId()}  Nombre: {t.getNombre()}")
-    #     print("\n")
+
+def worker(stub : broker_pb2_grpc.BrokerStub, topicId : str):
+    while True:
+
+        res = stub.Recibir_topic(broker_pb2.mensaje_req(topicID=topicId))
+        if res.status:
+            print(f"[{res.nombre}]: {res.mensaje}")
+
+        if keyboard.is_pressed('esc'):
+            break;

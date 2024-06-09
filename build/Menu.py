@@ -27,25 +27,25 @@ class Menu():
         self.stub.Ping(broker_pb2.ping(msg="Ping from client"))
 
         while True:
-            #try:
-            os.system("cls")
-            opt = int(self.inputOptionsGeneral())
-            if opt == 1:
+            try:
                 os.system("cls")
-                self.menuPublisher()
-            if opt == 2:
-                os.system("cls")
-                self.menuSuscriptor()
-            elif opt == 0:
-                os.system("cls")
-                break
+                opt = int(self.inputOptionsGeneral())
+                if opt == 1:
+                    os.system("cls")
+                    self.menuPublisher()
+                if opt == 2:
+                    os.system("cls")
+                    self.menuSuscriptor()
+                elif opt == 0:
+                    os.system("cls")
+                    break
 
-            # except grpc.RpcError:
-            #     print("\n[X][SERVIDOR] Servidor caido, levante el servidor para continuar")
-            #     os.system("pause")
-            # except:
-            #     print("\n[ERROR] Tipo de dato no valido, solo enteros...\n")
-            #     os.system("pause")
+            except grpc.RpcError:
+                print("\n[X][SERVIDOR] Servidor caido, levante el servidor para continuar")
+                os.system("pause")
+            except:
+                print("\n[ERROR] Tipo de dato no valido, solo enteros...\n")
+                os.system("pause")
         
 
     def menuPublisher(self):
@@ -223,14 +223,17 @@ class Menu():
 
 def worker(stub : broker_pb2_grpc.BrokerStub, topicId : str):
 
-    res = stub.Recibir_topic(broker_pb2.mensaje_req(topicID=topicId))
-    if res.status == False:
-        print(f"[{res.nombre}]: {res.mensaje}")
-
-    while True:
-        #if globals()["kill_thread"] == True:
-            #break;
+    try:
         res = stub.Recibir_topic(broker_pb2.mensaje_req(topicID=topicId))
-        if res.status and globals()["kill_thread"] == False:
-            if res.mensaje != "$2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO":
-                print(f"[{res.nombre}]: {res.mensaje}")
+        if res.status == False:
+            print(f"[{res.nombre}]: {res.mensaje}")
+    
+        while True:
+            #if globals()["kill_thread"] == True:
+                #break;
+            res = stub.Recibir_topic(broker_pb2.mensaje_req(topicID=topicId))
+            if res.status and globals()["kill_thread"] == False:
+                if res.mensaje != "$2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO":
+                    print(f"[{res.nombre}]: {res.mensaje}")
+    except:
+        print("Hilo finalizado")

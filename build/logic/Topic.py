@@ -83,7 +83,7 @@ class ListaTopics():
         self.topics.append(topic)
 
         return topic
-    
+
     def toString(self) ->str:
         s = ""
 

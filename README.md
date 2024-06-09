@@ -7,8 +7,9 @@
   1. Descargar e instalar GNUWIN32 y Chocolatey
   2. Al instalar los componentes anteriores. Se debe abrir el proyecto con el editor de código Visual Studio Code, y abriendo una terminal, se ejecutan los siguientes comandos:
       - **'make modules'**: Para instalar los modulos necesarios para el correcto funcionamiento del proyecto.
-      - **'make compile-grpc-py', 'make run-server-py' y 'make run-client-py'**: En caso de tener instalado Python en el equipo, se ejecutan los comandos anteriores. Se encargan de compilar el archivo broker.proto para actualizar los archivos autogenerados por proto. Y los dos siguientes se encargan de inicializar el servidor y los clientes.
-      - **'make compile-grpc-py3', 'make run-server-py3' y 'make run-client-py3'**: En caso de tener instalado Python3 en el equipo, hace lo mismo que los comandos anteriores.
+      - **'compile-grpc-python, compile-grpc-python3'**: Para compilar el archivo del broker.proto el cual crea las clases necesarias para implementar el servicio y los procedimientos remotos y el servidor empleados para este proyecto.
+      - **'Para inicializar el servidor'**: Para inicializar el servidor se debe de ingresar a la carpeta build y ejecutar el comando python servidor.py, o bien, python3 servidor.py
+      - **'Para instanciar un cliente'**: Para instanciar un cliente se debe de ingresar a la carpeta build y ejecutar el comando python cliente.py, o bien, python3 cliente.py
 ## Recursos consultados
   + https://gnuwin32.sourceforge.net/packages/make.htm
   + https://chocolatey.org/install

@@ -118,6 +118,7 @@ class Menu():
                     print("\n[X] El tema no existe, selecciona otro tema\n")
                 else:
                     self.topicsSuscritos.insertarTopic(Topic(res.topicId, res.nombreTopic))
+                    self.topicsSuscritos.topics[-1].setTopicId(topicId=res.topicId)
                     print(f"\n[Y] Suscrito al tema {res.nombreTopic} exitosamente\n")
 
                 os.system("pause")
@@ -127,9 +128,9 @@ class Menu():
 
                 print("================= ESCUCHANDO MENSAJES =================")
                 print("[NOTA] Apretar tecla 'esc' para salir del modo escucha\n")
-                for t in self.listenersTopics:
-                    print(t.getName())
-                    print(t.is_alive())
+                #for t in self.listenersTopics:
+                 #   print(t.getName())
+                  #  print(t.is_alive())
                 while True:
                     if keyboard.is_pressed('esc'):
                         globals()["kill_thread"] = True

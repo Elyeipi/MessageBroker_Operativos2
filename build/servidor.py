@@ -113,7 +113,7 @@ class Broker(broker_pb2_grpc.BrokerServicer):
         
 
 def serve():
-    server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
+    server = grpc.server(futures.ThreadPoolExecutor(max_workers=20))
     broker_pb2_grpc.add_BrokerServicer_to_server(Broker(), server)
     server.add_insecure_port("[::]:"+port)
     server.start()

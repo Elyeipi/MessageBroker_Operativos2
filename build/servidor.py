@@ -23,6 +23,8 @@ mutex_first_time = th.Lock()
 semaforo_lleno = th.Semaphore(BUFFER_MAX)
 semaforo_vacio = th.Semaphore(BUFFER_VACIO)
 
+
+
 listaTopics = ListaTopics()
 
 port = "50100"
@@ -59,12 +61,7 @@ class Broker(broker_pb2_grpc.BrokerServicer):
         for t in listaTopics.topics:
             if t.getTopicId() == request.topicId:
 
-                semaforo_lleno.acquire(timeout=0.5)
                 t.publicarMsg(request.mensaje)
-                semaforo_vacio.release()
-
-                print(f"VALOR DEL SEMAFORO LLENO {semaforo_lleno._value}")
-                print(f"VALOR DEL SEMAFORO VACIO {semaforo_vacio._value}")
 
                 print(f"Mensaje publicado en topic ({t.getTopicId()}): {request.mensaje}")
                 Broker.registrarBitacora(f"Cliente {context.peer()} publico mensaje en {t.getNombre()}: {request.mensaje}")
@@ -89,9 +86,7 @@ class Broker(broker_pb2_grpc.BrokerServicer):
         if topicAux != None:
             if len(topicAux.getBuffer()) >= 1:
 
-                semaforo_vacio.acquire()
                 msj = topicAux.leerMsg()
-                semaforo_lleno.release()
 
                 return broker_pb2.mensaje_res(mensaje=msj, nombre=topicAux.getNombre(), status=True)
             

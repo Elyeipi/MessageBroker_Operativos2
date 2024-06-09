@@ -7,6 +7,7 @@ class Topic():
         self.__nombre = nombre
         self.__buffer = []
         self.__mutex_publicar = th.Lock()
+        self.__cond_var = th.Condition()
     
     # Getters
     def getTopicId(self) -> str:
@@ -23,15 +24,24 @@ class Topic():
         self.__nombre = nombre
 
     def publicarMsg(self, mensaje: str):
-        self.__mutex_publicar.acquire();
+        self.__cond_var.acquire()
 
         self.__buffer.append(mensaje)
+
+        self.__cond_var.notify_all()
         
-        self.__mutex_publicar.release();
+        self.__cond_var.release()
     
     
     def leerMsg(self):
-        return self.__buffer.pop()
+        self.__cond_var.acquire()
+        self.__cond_var.wait()
+
+        msg = self.__buffer[-1]
+
+        self.__cond_var.release()
+
+        return msg
     
     def toString(self) -> str:
         return f"ID: {self.__topicId}   Nombre: {self.__nombre}"

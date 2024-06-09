@@ -9,10 +9,7 @@ import keyboard
 
 from logic.Topic import *
 
-BUFFER_MAX = 50
-BUFFER_VACIO = 0
-
-
+global kill_thread
 
 # ========================= MENUS ============================
 class Menu():
@@ -21,14 +18,10 @@ class Menu():
         self.topicsCreados = ListaTopics()
         self.topicsSuscritos = ListaTopics()
         self.stub = stub
-
-        self.semaforo_lleno = th.Semaphore(BUFFER_MAX)
-        self.semaforo_vacio = th.Semaphore(BUFFER_VACIO)
-
         self.listenersTopics : list[th.Thread] = []
 
     def start(self):
-        global kill_thread
+        globals()["kill_thread"] = False
 
         self.stub.Ping(broker_pb2.ping(msg="Ping from client"))
 
@@ -58,6 +51,7 @@ class Menu():
         while True:
             os.system("cls")
             opt = int(self.inputOptionsPublisher())
+
             if opt == 1:
                 os.system("cls")
                 nombreTema = self.crearTema()
@@ -133,6 +127,7 @@ class Menu():
                 print("[NOTA] Apretar tecla 'esc' para salir del modo escucha\n")
                 while True:
                     if keyboard.is_pressed('esc'):
+                        globals()["kill_thread"] = True
                         break;
 
 
@@ -150,6 +145,7 @@ class Menu():
 
     
     def iniciarListeners(self):
+        globals()["kill_thread"] = False
         idWorker : int = 0;
 
         for t in self.topicsSuscritos.topics:
@@ -221,10 +217,11 @@ class Menu():
 
 def worker(stub : broker_pb2_grpc.BrokerStub, topicId : str):
     while True:
+        if globals()["kill_thread"] == True:
+            break;
 
         res = stub.Recibir_topic(broker_pb2.mensaje_req(topicID=topicId))
-        if res.status:
-            print(f"[{res.nombre}]: {res.mensaje}")
+        if res.status and globals()["kill_thread"] == False:
 
-        if keyboard.is_pressed('esc'):
-            break;
+            print(f"[{res.nombre}]: {res.mensaje}")
+            print(f"""Flag: {globals()["kill_thread"]}""")

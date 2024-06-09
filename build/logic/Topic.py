@@ -24,9 +24,14 @@ class Topic():
         self.__nombre = nombre
 
     def publicarMsg(self, mensaje: str):
+
+        
+
         self.__cond_var.acquire()
 
+        self.__mutex_publicar.acquire()
         self.__buffer.append(mensaje)
+        self.__mutex_publicar.release()
 
         self.__cond_var.notify_all()
         

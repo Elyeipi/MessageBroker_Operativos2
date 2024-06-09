@@ -56,7 +56,7 @@ class Broker(broker_pb2_grpc.BrokerServicer):
         for t in listaTopics.topics:
             yield broker_pb2.listar_topics_res(topicId=t.getTopicId(), nombreTopic=t.getNombre())
 
-    def Publicar_mensaje(self, request, context):
+    def Publicar_mensaje(self, request, context):   
         topicAux = None
         for t in listaTopics.topics:
             if t.getTopicId() == request.topicId:
@@ -87,10 +87,12 @@ class Broker(broker_pb2_grpc.BrokerServicer):
             if len(topicAux.getBuffer()) >= 1:
 
                 msj = topicAux.leerMsg()
-
+                #print("Mensaje valido")
                 return broker_pb2.mensaje_res(mensaje=msj, nombre=topicAux.getNombre(), status=True)
             
-            return broker_pb2.mensaje_res(status=False)
+            #return broker_pb2.mensaje_res(status=False)
+            #print("Mensaje NOOOO valido")
+            return broker_pb2.mensaje_res(mensaje="Conexion establecida!", nombre="[Servidor]", status=False)
             
         
 

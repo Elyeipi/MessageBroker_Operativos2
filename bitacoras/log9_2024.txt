@@ -1,0 +1,306 @@
+9/6/2024:0:12:36 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:13:8 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:13:37 Tema creado "Hola ID(1)" 
+9/6/2024:0:14:23 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:14:29 Cliente ipv6:%5B::1%5D:58713 suscrito al tema Hola
+9/6/2024:0:15:7 Cliente ipv6:%5B::1%5D:58701 publico mensaje en Hola: hola
+9/6/2024:0:15:16 Cliente ipv6:%5B::1%5D:58701 publico mensaje en Hola: holaaa
+9/6/2024:0:15:25 Cliente ipv6:%5B::1%5D:58701 publico mensaje en Hola: kjsadas
+9/6/2024:0:15:36 Cliente ipv6:%5B::1%5D:58701 publico mensaje en Hola: holaa
+9/6/2024:0:15:47 Cliente ipv6:%5B::1%5D:58701 publico mensaje en Hola: klsajdk
+9/6/2024:0:15:56 Cliente ipv6:%5B::1%5D:58701 publico mensaje en Hola: kldsjfskd
+9/6/2024:0:16:7 Cliente ipv6:%5B::1%5D:58701 publico mensaje en Hola: fgfg
+9/6/2024:0:16:17 Cliente ipv6:%5B::1%5D:58701 publico mensaje en Hola: Me cago en
+9/6/2024:0:16:28 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:19:35 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:19:39 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:19:41 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:20:3 Tema creado "hola ID(1)" 
+9/6/2024:0:20:8 Cliente ipv6:%5B::1%5D:58833 suscrito al tema hola
+9/6/2024:0:20:14 Cliente ipv6:%5B::1%5D:58834 suscrito al tema hola
+9/6/2024:0:20:26 Tema creado "f ID(2)" 
+9/6/2024:0:20:34 Cliente ipv6:%5B::1%5D:58832 publico mensaje en hola: hola_comotan
+9/6/2024:0:20:46 Cliente ipv6:%5B::1%5D:58832 publico mensaje en hola: holaa
+9/6/2024:0:21:18 Cliente ipv6:%5B::1%5D:58832 publico mensaje en hola: holaaaaa
+9/6/2024:0:21:30 Cliente ipv6:%5B::1%5D:58832 publico mensaje en hola: como estan?
+9/6/2024:0:21:53 Cliente ipv6:%5B::1%5D:58832 publico mensaje en hola: Yo bien y ustedes?
+9/6/2024:0:22:10 Cliente ipv6:%5B::1%5D:58832 publico mensaje en hola: lasjdkas
+9/6/2024:0:22:14 Cliente ipv6:%5B::1%5D:58833 suscrito al tema f
+9/6/2024:0:22:55 Cliente ipv6:%5B::1%5D:58832 publico mensaje en hola: holaa
+9/6/2024:0:23:2 Cliente ipv6:%5B::1%5D:58832 publico mensaje en f: como estan?
+9/6/2024:0:23:10 Cliente ipv6:%5B::1%5D:58832 publico mensaje en f: como estan?
+9/6/2024:0:23:52 Cliente ipv6:%5B::1%5D:58832 publico mensaje en f: klk
+9/6/2024:0:24:3 Cliente ipv6:%5B::1%5D:58832 publico mensaje en hola: como tan?
+9/6/2024:0:27:8 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:27:12 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:27:16 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:27:24 Tema creado "hola ID(1)" 
+9/6/2024:0:27:29 Cliente ipv6:%5B::1%5D:59129 suscrito al tema hola
+9/6/2024:0:27:47 Cliente ipv6:%5B::1%5D:59125 publico mensaje en hola: hola
+9/6/2024:0:28:6 Cliente ipv6:%5B::1%5D:59125 publico mensaje en hola: holaa
+9/6/2024:0:28:13 Cliente ipv6:%5B::1%5D:59131 suscrito al tema hola
+9/6/2024:0:28:21 Cliente ipv6:%5B::1%5D:59125 publico mensaje en hola: holaa
+9/6/2024:0:28:39 Cliente ipv6:%5B::1%5D:59125 publico mensaje en hola: klk
+9/6/2024:0:29:27 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:29:35 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:29:40 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:29:44 Tema creado "hola ID(1)" 
+9/6/2024:0:29:51 Cliente ipv6:%5B::1%5D:59139 suscrito al tema hola
+9/6/2024:0:29:55 Cliente ipv6:%5B::1%5D:59140 suscrito al tema hola
+9/6/2024:0:30:3 Cliente ipv6:%5B::1%5D:59138 publico mensaje en hola: hola
+9/6/2024:0:30:9 Cliente ipv6:%5B::1%5D:59138 publico mensaje en hola: hola
+9/6/2024:0:30:42 Cliente ipv6:%5B::1%5D:59138 publico mensaje en hola: hsada
+9/6/2024:0:30:54 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:30:57 Cliente ipv6:%5B::1%5D:59144 suscrito al tema hola
+9/6/2024:0:31:4 Cliente ipv6:%5B::1%5D:59138 publico mensaje en hola: dsfdsf
+9/6/2024:0:31:11 Cliente ipv6:%5B::1%5D:59138 publico mensaje en hola: dfdsf
+9/6/2024:0:31:29 Cliente ipv6:%5B::1%5D:59138 publico mensaje en hola: sdasd
+9/6/2024:0:31:33 Cliente ipv6:%5B::1%5D:59138 publico mensaje en hola: sxasd
+9/6/2024:0:44:43 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:44:47 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:44:50 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:44:56 Tema creado "hola ID(1)" 
+9/6/2024:0:45:2 Cliente ipv6:%5B::1%5D:59229 suscrito al tema hola
+9/6/2024:0:45:8 Cliente ipv6:%5B::1%5D:59230 suscrito al tema hola
+9/6/2024:0:45:25 Cliente ipv6:%5B::1%5D:59228 publico mensaje en hola: hola
+9/6/2024:0:45:30 Cliente ipv6:%5B::1%5D:59228 publico mensaje en hola: hola2
+9/6/2024:0:52:39 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:52:45 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:52:47 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:0:52:56 Tema creado "Saul ID(1)" 
+9/6/2024:0:53:0 Cliente ipv6:%5B::1%5D:59274 suscrito al tema Saul
+9/6/2024:0:53:6 Cliente ipv6:%5B::1%5D:59275 suscrito al tema Saul
+9/6/2024:0:53:22 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: conexion
+9/6/2024:0:53:27 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: hola
+9/6/2024:0:53:39 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: conexion
+9/6/2024:0:53:43 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: hola
+9/6/2024:0:54:12 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: conexion
+9/6/2024:0:54:13 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: hola
+9/6/2024:0:54:41 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: conexion
+9/6/2024:0:54:49 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: hola como estan
+9/6/2024:0:54:53 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: conexion
+9/6/2024:1:6:32 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: 1ssdasd
+9/6/2024:1:6:37 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: conexion
+9/6/2024:1:6:44 Cliente ipv6:%5B::1%5D:59273 publico mensaje en Saul: sadsad
+9/6/2024:1:7:54 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:7:56 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:7:59 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:8:5 Tema creado "Saul ID(1)" 
+9/6/2024:1:8:11 Cliente ipv6:%5B::1%5D:59312 suscrito al tema Saul
+9/6/2024:1:8:17 Cliente ipv6:%5B::1%5D:59313 suscrito al tema Saul
+9/6/2024:1:8:25 Cliente ipv6:%5B::1%5D:59311 publico mensaje en Saul: conexion
+9/6/2024:1:8:31 Cliente ipv6:%5B::1%5D:59311 publico mensaje en Saul: hola como estan
+9/6/2024:1:8:40 Cliente ipv6:%5B::1%5D:59311 publico mensaje en Saul: conexion
+9/6/2024:1:8:42 Cliente ipv6:%5B::1%5D:59311 publico mensaje en Saul: klk
+9/6/2024:1:8:53 Cliente ipv6:%5B::1%5D:59311 publico mensaje en Saul: conexion
+9/6/2024:1:8:56 Cliente ipv6:%5B::1%5D:59311 publico mensaje en Saul: holaaa
+9/6/2024:1:13:1 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:13:5 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:13:7 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:13:12 Tema creado "saul ID(1)" 
+9/6/2024:1:13:16 Cliente ipv6:%5B::1%5D:59334 suscrito al tema saul
+9/6/2024:1:13:19 Cliente ipv6:%5B::1%5D:59335 suscrito al tema saul
+9/6/2024:1:13:28 Cliente ipv6:%5B::1%5D:59333 publico mensaje en saul: conexion
+9/6/2024:1:13:30 Cliente ipv6:%5B::1%5D:59333 publico mensaje en saul: hola
+9/6/2024:1:13:34 Cliente ipv6:%5B::1%5D:59333 publico mensaje en saul: conexion
+9/6/2024:1:13:38 Cliente ipv6:%5B::1%5D:59333 publico mensaje en saul: como estan?
+9/6/2024:1:14:50 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:14:53 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:14:55 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:15:2 Tema creado "saul ID(1)" 
+9/6/2024:1:15:11 Cliente ipv6:%5B::1%5D:59344 suscrito al tema saul
+9/6/2024:1:15:16 Cliente ipv6:%5B::1%5D:59345 suscrito al tema saul
+9/6/2024:1:15:54 Cliente ipv6:%5B::1%5D:59343 publico mensaje en saul: conexion
+9/6/2024:1:16:6 Cliente ipv6:%5B::1%5D:59343 publico mensaje en saul: hola
+9/6/2024:1:16:18 Cliente ipv6:%5B::1%5D:59343 publico mensaje en saul: conexion
+9/6/2024:1:16:25 Cliente ipv6:%5B::1%5D:59343 publico mensaje en saul: sadfasd
+9/6/2024:1:16:42 Cliente ipv6:%5B::1%5D:59343 publico mensaje en saul: conexion
+9/6/2024:1:16:54 Cliente ipv6:%5B::1%5D:59343 publico mensaje en saul: hola como estan
+9/6/2024:1:17:41 Cliente ipv6:%5B::1%5D:59343 publico mensaje en saul: conexion
+9/6/2024:1:17:44 Cliente ipv6:%5B::1%5D:59343 publico mensaje en saul: holaaaaa
+9/6/2024:1:24:5 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:24:10 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:24:13 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:24:23 Tema creado "saul ID(1)" 
+9/6/2024:1:24:30 Cliente ipv6:%5B::1%5D:59388 suscrito al tema saul
+9/6/2024:1:24:34 Cliente ipv6:%5B::1%5D:59389 suscrito al tema saul
+9/6/2024:1:24:58 Cliente ipv6:%5B::1%5D:59387 publico mensaje en saul: conexion
+9/6/2024:1:24:59 Cliente ipv6:%5B::1%5D:59387 publico mensaje en saul: saul
+9/6/2024:1:25:2 Cliente ipv6:%5B::1%5D:59387 publico mensaje en saul: conexion
+9/6/2024:1:25:5 Cliente ipv6:%5B::1%5D:59387 publico mensaje en saul: saul2
+9/6/2024:1:30:6 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:30:9 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:30:11 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:30:45 Tema creado "Saul ID(1)" 
+9/6/2024:1:30:48 Cliente ipv6:%5B::1%5D:59514 suscrito al tema Saul
+9/6/2024:1:30:51 Cliente ipv6:%5B::1%5D:59527 suscrito al tema Saul
+9/6/2024:1:31:18 Cliente ipv6:%5B::1%5D:59505 publico mensaje en Saul: conexion
+9/6/2024:1:31:20 Cliente ipv6:%5B::1%5D:59505 publico mensaje en Saul: holaaa
+9/6/2024:1:31:26 Cliente ipv6:%5B::1%5D:59505 publico mensaje en Saul: conexion
+9/6/2024:1:31:28 Cliente ipv6:%5B::1%5D:59505 publico mensaje en Saul: hola siii
+9/6/2024:1:32:15 Cliente ipv6:%5B::1%5D:59505 publico mensaje en Saul: conexion
+9/6/2024:1:32:17 Cliente ipv6:%5B::1%5D:59505 publico mensaje en Saul: sadasd
+9/6/2024:1:36:16 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:36:18 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:36:23 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:1:36:28 Tema creado "saul ID(1)" 
+9/6/2024:1:36:44 Cliente ipv6:%5B::1%5D:59615 suscrito al tema saul
+9/6/2024:1:36:48 Cliente ipv6:%5B::1%5D:59616 suscrito al tema saul
+9/6/2024:1:37:18 Cliente ipv6:%5B::1%5D:59612 publico mensaje en saul: conexion
+9/6/2024:1:37:20 Cliente ipv6:%5B::1%5D:59612 publico mensaje en saul: hola
+9/6/2024:1:37:31 Cliente ipv6:%5B::1%5D:59612 publico mensaje en saul: conexion
+9/6/2024:1:37:33 Cliente ipv6:%5B::1%5D:59612 publico mensaje en saul: sadsdasd
+9/6/2024:2:23:34 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:2:23:37 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:2:23:40 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:2:23:46 Tema creado "saul ID(1)" 
+9/6/2024:2:23:50 Cliente ipv6:%5B::1%5D:59838 suscrito al tema saul
+9/6/2024:2:23:54 Cliente ipv6:%5B::1%5D:59840 suscrito al tema saul
+9/6/2024:2:24:6 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: conexion
+9/6/2024:2:24:8 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: sadasd
+9/6/2024:2:24:12 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: conexion
+9/6/2024:2:24:14 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: asdasdasd
+9/6/2024:2:24:27 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: conexion
+9/6/2024:2:24:29 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: sadasda
+9/6/2024:2:24:37 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: conexion
+9/6/2024:2:24:39 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: asdasdas
+9/6/2024:2:26:18 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: conexion
+9/6/2024:2:26:19 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: sadasdas
+9/6/2024:2:26:22 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: conexion
+9/6/2024:2:26:26 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: Como estan?
+9/6/2024:2:27:33 Tema creado "juan ID(2)" 
+9/6/2024:2:27:40 Cliente ipv6:%5B::1%5D:59838 suscrito al tema juan
+9/6/2024:2:27:54 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: conexion
+9/6/2024:2:27:57 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: hola
+9/6/2024:2:28:4 Cliente ipv6:%5B::1%5D:59834 publico mensaje en juan: conexion
+9/6/2024:2:28:7 Cliente ipv6:%5B::1%5D:59834 publico mensaje en juan: como tan?
+9/6/2024:2:29:6 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: conexion
+9/6/2024:2:29:9 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: hola
+9/6/2024:2:29:13 Cliente ipv6:%5B::1%5D:59834 publico mensaje en juan: conexion
+9/6/2024:2:29:16 Cliente ipv6:%5B::1%5D:59834 publico mensaje en juan: carlos
+9/6/2024:2:29:31 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: conexion
+9/6/2024:2:29:32 Cliente ipv6:%5B::1%5D:59834 publico mensaje en saul: sdasd
+9/6/2024:2:29:39 Cliente ipv6:%5B::1%5D:59834 publico mensaje en juan: conexion
+9/6/2024:2:29:40 Cliente ipv6:%5B::1%5D:59834 publico mensaje en juan: dsfsdf
+9/6/2024:2:32:0 Cliente ipv6:%5B::1%5D:59834 suscrito al tema saul
+9/6/2024:2:32:39 Cliente ipv6:%5B::1%5D:59838 publico mensaje en saul: conexion
+9/6/2024:2:32:41 Cliente ipv6:%5B::1%5D:59838 publico mensaje en saul: hola
+9/6/2024:2:32:53 Cliente ipv6:%5B::1%5D:59838 publico mensaje en juan: conexion
+9/6/2024:2:32:55 Cliente ipv6:%5B::1%5D:59838 publico mensaje en juan: hola
+9/6/2024:2:32:58 Cliente ipv6:%5B::1%5D:59838 publico mensaje en saul: conexion
+9/6/2024:2:33:0 Cliente ipv6:%5B::1%5D:59838 publico mensaje en saul: jola
+9/6/2024:2:33:16 Cliente ipv6:%5B::1%5D:59838 publico mensaje en saul: conexion
+9/6/2024:2:33:18 Cliente ipv6:%5B::1%5D:59838 publico mensaje en saul: sqad
+9/6/2024:2:36:47 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:2:36:50 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:2:36:54 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:2:37:13 Tema creado "Saul ID(1)" 
+9/6/2024:2:37:20 Cliente ipv6:%5B::1%5D:59899 suscrito al tema Saul
+9/6/2024:2:37:30 Cliente ipv6:%5B::1%5D:59900 suscrito al tema Saul
+9/6/2024:2:38:2 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: conexion
+9/6/2024:2:38:4 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: hola
+9/6/2024:2:38:9 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: conexion
+9/6/2024:2:38:13 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: como estan?
+9/6/2024:2:38:52 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: conexion
+9/6/2024:2:38:59 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: Hola de nuevo
+9/6/2024:2:39:7 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: conexion
+9/6/2024:2:39:10 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: klk
+9/6/2024:2:39:14 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: conexion
+9/6/2024:2:39:16 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: siiiuuuu
+9/6/2024:2:39:44 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: conexion
+9/6/2024:2:39:56 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: como estan señores?
+9/6/2024:2:40:10 Tema creado "juan ID(2)" 
+9/6/2024:2:40:26 Cliente ipv6:%5B::1%5D:59899 suscrito al tema juan
+9/6/2024:2:40:39 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: conexion
+9/6/2024:2:40:47 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: estoy en tema 1
+9/6/2024:2:41:1 Cliente ipv6:%5B::1%5D:59898 publico mensaje en juan: conexion
+9/6/2024:2:41:8 Cliente ipv6:%5B::1%5D:59898 publico mensaje en juan: estoy en el tema2
+9/6/2024:2:42:25 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: conexion
+9/6/2024:2:42:28 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: holaaa
+9/6/2024:2:42:31 Cliente ipv6:%5B::1%5D:59898 publico mensaje en juan: conexion
+9/6/2024:2:42:35 Cliente ipv6:%5B::1%5D:59898 publico mensaje en juan: holaa2
+9/6/2024:2:43:6 Cliente ipv6:%5B::1%5D:59900 suscrito al tema juan
+9/6/2024:2:43:18 Cliente ipv6:%5B::1%5D:59898 publico mensaje en juan: conexion
+9/6/2024:2:43:21 Cliente ipv6:%5B::1%5D:59898 publico mensaje en juan: jola
+9/6/2024:2:43:57 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: conexion
+9/6/2024:2:44:0 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: tema1
+9/6/2024:2:44:4 Cliente ipv6:%5B::1%5D:59898 publico mensaje en juan: conexion
+9/6/2024:2:44:8 Cliente ipv6:%5B::1%5D:59898 publico mensaje en juan: como tan?
+9/6/2024:2:44:26 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: conexion
+9/6/2024:2:44:28 Cliente ipv6:%5B::1%5D:59898 publico mensaje en Saul: sadsad
+9/6/2024:2:44:31 Cliente ipv6:%5B::1%5D:59898 publico mensaje en juan: conexion
+9/6/2024:2:44:32 Cliente ipv6:%5B::1%5D:59898 publico mensaje en juan: sadasdas
+9/6/2024:2:52:34 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:2:52:43 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:2:52:48 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:2:52:59 Tema creado "Saul ID(1)" 
+9/6/2024:2:53:3 Cliente ipv6:%5B::1%5D:60052 suscrito al tema Saul
+9/6/2024:2:53:38 Cliente ipv6:%5B::1%5D:60054 suscrito al tema Saul
+9/6/2024:2:53:53 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:2:54:2 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: hola como estan?
+9/6/2024:2:54:18 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:2:54:22 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: holiwis
+9/6/2024:2:55:17 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:2:55:30 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: lo logre carepichaaas
+9/6/2024:2:55:45 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:2:55:47 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: holaaa
+9/6/2024:2:56:22 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:2:56:26 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: como estan?
+9/6/2024:2:57:1 Tema creado "juan ID(2)" 
+9/6/2024:2:58:8 Cliente ipv6:%5B::1%5D:60052 suscrito al tema juan
+9/6/2024:2:58:22 Cliente ipv6:%5B::1%5D:60051 publico mensaje en juan: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:2:58:28 Cliente ipv6:%5B::1%5D:60051 publico mensaje en juan: Holaa
+9/6/2024:2:58:32 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:2:58:35 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: como estan?
+9/6/2024:2:58:58 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:2:59:6 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: soy el mas pichudo
+9/6/2024:2:59:12 Cliente ipv6:%5B::1%5D:60051 publico mensaje en juan: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:2:59:16 Cliente ipv6:%5B::1%5D:60051 publico mensaje en juan: q lindoooo
+9/6/2024:2:59:27 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:2:59:29 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: holaa
+9/6/2024:2:59:42 Cliente ipv6:%5B::1%5D:60051 publico mensaje en juan: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:2:59:46 Cliente ipv6:%5B::1%5D:60051 publico mensaje en juan: como estan?
+9/6/2024:3:0:8 Cliente ipv6:%5B::1%5D:60054 suscrito al tema juan
+9/6/2024:3:0:29 Cliente ipv6:%5B::1%5D:60051 publico mensaje en juan: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:0:33 Cliente ipv6:%5B::1%5D:60051 publico mensaje en juan: holiwis
+9/6/2024:3:0:36 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:0:38 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: como tan
+9/6/2024:3:0:47 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:0:52 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: q saico yo
+9/6/2024:3:0:58 Cliente ipv6:%5B::1%5D:60051 publico mensaje en juan: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:1:0 Cliente ipv6:%5B::1%5D:60051 publico mensaje en juan: durooo
+9/6/2024:3:1:12 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:1:13 Cliente ipv6:%5B::1%5D:60051 publico mensaje en Saul: sdsada
+9/6/2024:3:19:16 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:3:19:20 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:3:19:23 Nuevo cliente conectado al servidor en el puerto 50100
+9/6/2024:3:19:30 Tema creado "Saul ID(1)" 
+9/6/2024:3:19:43 Cliente ipv6:%5B::1%5D:60167 suscrito al tema Saul
+9/6/2024:3:19:49 Cliente ipv6:%5B::1%5D:60169 suscrito al tema Saul
+9/6/2024:3:20:51 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:21:48 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: hola
+9/6/2024:3:21:59 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:22:7 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: como estan muchachos
+9/6/2024:3:23:7 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:23:12 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: hola otra vez
+9/6/2024:3:23:21 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:23:25 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: klk
+9/6/2024:3:23:51 Tema creado "Juan ID(2)" 
+9/6/2024:3:24:2 Cliente ipv6:%5B::1%5D:60167 suscrito al tema Juan
+9/6/2024:3:24:58 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:25:4 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: tema saul
+9/6/2024:3:25:17 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Juan: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:25:24 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Juan: tema juan
+9/6/2024:3:25:59 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:26:2 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: Saul 123
+9/6/2024:3:26:7 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Juan: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:26:11 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Juan: juan 321
+9/6/2024:3:26:22 Cliente ipv6:%5B::1%5D:60169 suscrito al tema Juan
+9/6/2024:3:27:8 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Juan: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:27:12 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Juan: kola
+9/6/2024:3:27:21 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:27:30 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: vacas
+9/6/2024:3:28:39 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:28:42 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Saul: saul
+9/6/2024:3:28:47 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Juan: $2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO
+9/6/2024:3:28:49 Cliente ipv6:%5B::1%5D:60166 publico mensaje en Juan: juan

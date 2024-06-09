@@ -19,6 +19,7 @@ class Menu():
         self.topicsSuscritos = ListaTopics()
         self.stub = stub
         self.listenersTopics : list[th.Thread] = []
+        self.topicos_activos = set()
 
     def start(self):
         globals()["kill_thread"] = False
@@ -75,6 +76,7 @@ class Menu():
                 print("\n")
 
                 topicId = input("Introducir ID del tema\n\n   > ")
+                res = self.stub.Publicar_mensaje(broker_pb2.publicar_mensaje_req(mensaje="$2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO", topicId=topicId))
                 topicMensaje = input("\nMensaje: ")
                 
                 response = self.stub.Publicar_mensaje(broker_pb2.publicar_mensaje_req(mensaje=topicMensaje, topicId=topicId))
@@ -125,6 +127,9 @@ class Menu():
 
                 print("================= ESCUCHANDO MENSAJES =================")
                 print("[NOTA] Apretar tecla 'esc' para salir del modo escucha\n")
+                for t in self.listenersTopics:
+                    print(t.getName())
+                    print(t.is_alive())
                 while True:
                     if keyboard.is_pressed('esc'):
                         globals()["kill_thread"] = True
@@ -150,13 +155,14 @@ class Menu():
 
         for t in self.topicsSuscritos.topics:
             idWorker += 1
-            threadAux = th.Thread(target=worker, name=f"listener ({idWorker})", args=(self.stub, t.getTopicId(),))
-            self.listenersTopics.append(threadAux)
-            threadAux.start()
-            
-            
+            topic_id = t.getTopicId()
+            if topic_id not in self.topicos_activos:
+                self.topicos_activos.add(topic_id)
+                threadAux = th.Thread(target=worker, name=f"listener ({topic_id})", args=(self.stub, t.getTopicId(),))
+                self.listenersTopics.append(threadAux)
+                threadAux.start()
 
-
+            
 
     # ========== MOSTRAR GENERAL ==========
     def showOptionsGeneral(self):
@@ -216,11 +222,15 @@ class Menu():
 
 
 def worker(stub : broker_pb2_grpc.BrokerStub, topicId : str):
-    while True:
-        if globals()["kill_thread"] == True:
-            break;
 
+    res = stub.Recibir_topic(broker_pb2.mensaje_req(topicID=topicId))
+    if res.status == False:
+        print(f"[{res.nombre}]: {res.mensaje}")
+
+    while True:
+        #if globals()["kill_thread"] == True:
+            #break;
         res = stub.Recibir_topic(broker_pb2.mensaje_req(topicID=topicId))
         if res.status and globals()["kill_thread"] == False:
-
-            print(f"[{res.nombre}]: {res.mensaje}")
+            if res.mensaje != "$2a$12$6MCe7W8YqBD0kFmAJJ18XOrAx58d4Rw.mwdwMkKDKS4FU3t6QxvKO":
+                print(f"[{res.nombre}]: {res.mensaje}")

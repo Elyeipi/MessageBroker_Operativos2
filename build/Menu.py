@@ -224,4 +224,3 @@ def worker(stub : broker_pb2_grpc.BrokerStub, topicId : str):
         if res.status and globals()["kill_thread"] == False:
 
             print(f"[{res.nombre}]: {res.mensaje}")
-            print(f"""Flag: {globals()["kill_thread"]}""")

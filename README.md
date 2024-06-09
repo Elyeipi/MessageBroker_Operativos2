@@ -4,12 +4,14 @@
   - Saúl Araya Salas
   - Alexander Gutiérez Ugalde
 ## Instrucciones de uso
-  1. Descargar e instalar GNUWIN32 y Chocolatey
-  2. Al instalar los componentes anteriores. Se debe abrir el proyecto con el editor de código Visual Studio Code, y abriendo una terminal, se ejecutan los siguientes comandos:
-      - **'make modules'**: Para instalar los modulos necesarios para el correcto funcionamiento del proyecto.
-      - **'compile-grpc-python, compile-grpc-python3'**: Para compilar el archivo del broker.proto el cual crea las clases necesarias para implementar el servicio y los procedimientos remotos y el servidor empleados para este proyecto.
-      - **'Para inicializar el servidor'**: Para inicializar el servidor se debe de ingresar a la carpeta build y ejecutar el comando python servidor.py, o bien, python3 servidor.py
-      - **'Para instanciar un cliente'**: Para instanciar un cliente se debe de ingresar a la carpeta build y ejecutar el comando python cliente.py, o bien, python3 cliente.py
+  1. Descargar e instalar GNUWIN32 y Chocolatey, esto para instalar las funcionalidades del comando make (para manejar Makefiles). Al ejecutar el comando **'choco install make'** a través de una PowerShell con permisos de administrador.
+  2. Al instalar los componentes anteriores. Se debe abrir el proyecto con el editor de código Visual Studio Code, y haciendo uso de una terminal integrada, se ejecutan los siguientes comandos:
+      - **'make modules'**: En la carpeta raíz del proyecto, se ejecuta este comando para instalar los módulos necesarios para el funcionamiento del proyecto. Actualiza primeramente el instalador de paquetes de Python (PIP), para posteriormente instalar módulos respectivos.
+      - **'compile-grpc-python' y compile-grpc-python3'**: Para compilar el archivo del broker.proto, el cual se encarga de crear las clases necesarias para implementar los servicios, los procedimientos remotos y el servidor.
+    
+### Ejecución de los programas
+  - **Para inicializar el servidor**: Se debe de ingresar a la carpeta build y ejecutar el comando python servidor.py, o bien, python3 servidor.py. Dependerá de los paquetes de Python que se encuentren en el equipo.
+  - **'Para instanciar un cliente'**: Se debe de ingresar a la carpeta build y ejecutar el comando python cliente.py, o bien, python3 cliente.py. Dependerá de los paquetes de Python que se encuentren en el equipo.
 ## Recursos consultados
   + https://gnuwin32.sourceforge.net/packages/make.htm
   + https://chocolatey.org/install
